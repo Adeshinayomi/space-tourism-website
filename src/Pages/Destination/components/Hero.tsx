@@ -4,7 +4,7 @@ export function Hero(){
         <section className='w-full grid mt-8 text-White gap-10'>
             <div className='w-full grid gap-10'>
                 <h1 className='flex justify-center gap-5 text-lg font-barlow font-regular'> 
-                    <span className='text-[#CCCCCC] font-barlow'>01</span>
+                    <span className='text-Dark font-barlow'>01</span>
                     PICK YOUR DESTINATION
                 </h1>
                 <div className='w-1/2 mx-auto'>

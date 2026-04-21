@@ -9,11 +9,13 @@ export default {
       colors:{
         Blue300:"#D0D6F9",
         Blue900:"#0B0D17",
-        White:"#FFFFFF"
+        White:"#FFFFFF",
+        Dark:"#CCCCCC"
       },
       backgroundImage:{
         'background-home-mobile': "url('./assets/home/background-home-mobile.jpg')",
-        'background-destination-mobile':"url('./assets/destination/background-destination-mobile.jpg')"
+        'background-destination-mobile':"url('./assets/destination/background-destination-mobile.jpg')",
+        'background-crew-mobile':"url('./assets/crew/background-crew-mobile.jpg')"
       },
       fontFamily:{
         bellefair:["Bellefair", "serif"],
