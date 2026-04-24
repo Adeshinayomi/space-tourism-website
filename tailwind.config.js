@@ -15,7 +15,8 @@ export default {
       backgroundImage:{
         'background-home-mobile': "url('./assets/home/background-home-mobile.jpg')",
         'background-destination-mobile':"url('./assets/destination/background-destination-mobile.jpg')",
-        'background-crew-mobile':"url('./assets/crew/background-crew-mobile.jpg')"
+        'background-crew-mobile':"url('./assets/crew/background-crew-mobile.jpg')",
+        'background-tech-mobile':"url('./assets/technology/background-technology-mobile.jpg')"
       },
       fontFamily:{
         bellefair:["Bellefair", "serif"],
