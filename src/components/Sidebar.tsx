@@ -1,6 +1,8 @@
 import close from "../assets/shared/icon-close.svg";
-import { Link } from "react-router-dom";
+import { Link,useLocation } from "react-router-dom";
 export function Sidebar({menuIsVisble,setMenuIsVisible}:any) {
+    const location=useLocation()
+    console.log(location.pathname === '/crew')
     function closeMenu(){
         setMenuIsVisible(false)
     }
@@ -17,19 +19,19 @@ export function Sidebar({menuIsVisble,setMenuIsVisible}:any) {
         <img src={close} alt="close-icon" />
       </button>
       <ul className="mt-16 grid gap-7 pl-5">
-        <Link to={'/'} className="flex gap-2 text-xl border-r-4">
+        <Link to={'/'} className={`flex gap-2 text-xl ${location.pathname === '/'?'border-r-4':''} hover:border-r-4`}>
           <span className="text-White font-bold">00</span>
           HOME
         </Link>
-        <Link to={'/destination'} className="flex gap-2 text-xl hover:border-r-4">
+        <Link to={'/destination'} className={`flex gap-2 text-xl ${location.pathname === '/destination'?'border-r-4':''} hover:border-r-4`}>
           <span className="text-White font-bold">01</span>
           DESTINATION
         </Link>
-        <Link to={'/crew'} className="flex gap-2 text-xl hover:border-r-4">
+        <Link to={'/crew'} className={`flex gap-2 text-xl ${location.pathname === '/crew'?'border-r-4':''} hover:border-r-4`}>
           <span className="text-White font-bold">02</span>
           CREW
         </Link>
-        <Link to={'/technology'} className="flex gap-2 text-xl hover:border-r-4">
+        <Link to={'/technology'} className={`flex gap-2 text-xl ${location.pathname === '/technology'?'border-r-4':''} hover:border-r-4`}>
           <span className="text-White font-bold">03</span>
           TECHNOLOGY
         </Link>
