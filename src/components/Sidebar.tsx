@@ -2,7 +2,6 @@ import close from "../assets/shared/icon-close.svg";
 import { Link,useLocation } from "react-router-dom";
 export function Sidebar({menuIsVisble,setMenuIsVisible}:any) {
     const location=useLocation()
-    console.log(location.pathname === '/crew')
     function closeMenu(){
         setMenuIsVisible(false)
     }

@@ -1,0 +1,10 @@
+export type destination={
+    name:string,
+    images:{
+        png:string,
+        webp:string
+    },
+    description:string,
+    distance:string,
+    travel:string
+}

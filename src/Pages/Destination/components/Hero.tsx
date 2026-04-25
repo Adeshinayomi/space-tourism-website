@@ -1,5 +1,10 @@
-import moon from '../../../assets/destination/image-moon.png'
-export function Hero(){
+import { useState } from 'react'
+import type { destination } from '../../../Types/destinationType'
+interface type{
+    destination:destination[]
+}
+export function Hero({destination}:type){
+   const [currentdestionation,setCurrentDestination]=useState(0)
     return(
         <section className='w-full grid mt-8 text-White gap-10'>
             <div className='w-full grid gap-10'>
@@ -8,33 +13,39 @@ export function Hero(){
                     PICK YOUR DESTINATION
                 </h1>
                 <div className='w-1/2 mx-auto'>
-                    <img src={moon} alt="moon image"/>
+                    <img src={destination[currentdestionation].images.png} alt="moon-image"/>
                 </div>
             </div>
 
             <div className='w-5/6 mx-auto grid gap-10'>
                 <div className='w-5/6 mx-auto flex justify-between'>
-                    <button className={`text-White underline decoration-4 underline-offset-8`}>MOON</button>
-                    <button className={`text-Blue300`}>MARS</button>
-                    <button className={`text-Blue300`}>EUROPA</button>
-                    <button className={`text-Blue300`}>TITAN</button>
+                    <button className={`text-White ${currentdestionation === 0 ?'underline decoration-4 underline-offset-8':''} hover:underline decoration-4 underline-offset-8`} onClick={()=>{
+                        setCurrentDestination(0)
+                    }}>MOON</button>
+                    <button className={`text-White ${currentdestionation === 1 ?'underline decoration-4 underline-offset-8':''} hover:underline decoration-4 underline-offset-8`} onClick={()=>{
+                        setCurrentDestination(1)
+                    }}>MARS</button>
+                    <button className={`text-White ${currentdestionation === 2 ?'underline decoration-4 underline-offset-8':''} hover:underline decoration-4 underline-offset-8`} onClick={()=>{
+                        setCurrentDestination(2)
+                    }}>EUROPA</button>
+                    <button className={`text-White ${currentdestionation === 3 ?'underline decoration-4 underline-offset-8':''} hover:underline decoration-4 underline-offset-8`} onClick={()=>{
+                        setCurrentDestination(3)
+                    }}>TITAN</button>
                 </div>
-                <h1 className='text-5xl font-bellefair font-regular text-center'>MOON</h1>
+                <h1 className='text-5xl font-bellefair font-regular text-center'>{destination[currentdestionation].name.toUpperCase()}</h1>
                 <p className='text-center text-White text-lg font-barlow'>
-                    See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
-                    regain perspective and come back refreshed. While you’re there, take in some history 
-                    by visiting the Luna 2 and Apollo 11 landing sites.
+                    {destination[currentdestionation].description}
                 </p>
                 <hr />
             </div>
             <div className='text-White text-center mb-10 w-5/6 mx-auto grid gap-10 justify-center font-bellefair'>
                 <div className='grid gap-2 '>
                     <span className='text-md font-regular text-Blue300'> AVG. DISTANCE</span>
-                    <p className='text-4xl'>384,400 KM</p>
+                    <p className='text-4xl'>{destination[currentdestionation].distance.toUpperCase()}</p>
                 </div>
                 <div>
                     <span className='font-regular text-md text-Blue300'>EST. TRAVEL TIME</span>
-                    <p className='text-4xl'> 3 DAYS</p>
+                    <p className='text-4xl'>{destination[currentdestionation].travel.toUpperCase()}</p>
                 </div>
             </div>
         </section>
