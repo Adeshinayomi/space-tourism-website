@@ -1,4 +1,3 @@
-import spaceVehicle from '../../../assets/technology/image-launch-vehicle-portrait.jpg'
 import type { tech } from '../../../Types/techType'
 import { useState } from 'react'
 

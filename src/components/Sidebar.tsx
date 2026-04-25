@@ -7,7 +7,7 @@ export function Sidebar({menuIsVisble,setMenuIsVisible}:any) {
     }
   return (
     <nav
-        className={`fixed top-0 ${menuIsVisble?'right-0':'-right-80'} h-screen w-[70%]
+        className={`md:hidden z-20 fixed top-0 ${menuIsVisble?'right-0':'-right-80'} h-screen w-[70%]
         bg-gradient-to-br from-black/70 via-slate-900/50 to-neutral-200/10
         backdrop-blur-2xl
         border-l border-white/10
