@@ -7,7 +7,7 @@ interface type{
 }
 export function Crew({crew}:type){
     return(
-        <div className="min-h-screen bg-background-crew-mobile bg-cover bg-no-repeat bg-fixed">
+        <div className="min-h-screen bg-background-crew-mobile md:bg-background-crew-desktop bg-cover bg-no-repeat bg-fixed">
             <Header />
             <Hero crew={crew}/>
         </div>

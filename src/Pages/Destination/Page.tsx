@@ -7,7 +7,7 @@ interface types{
 }
 export function Destination({destination}:types){
     return(
-        <div className="min-h-screen bg-background-destination-mobile bg-no-repeat bg-cover bg-fixed">
+        <div className="min-h-screen bg-background-destination-mobile md:bg-background-destination-desktop bg-no-repeat bg-cover bg-fixed">
             <Header />
             <Hero destination={destination}/>
         </div>

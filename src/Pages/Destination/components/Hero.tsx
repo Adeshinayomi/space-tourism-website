@@ -7,7 +7,7 @@ export function Hero({destination}:type){
    const [currentdestionation,setCurrentDestination]=useState(0)
     return(
         <section className='w-full grid mt-8 text-White gap-10 md:flex md:gap-10 md:h-screen md:content-end'>
-            <div className='w-full grid gap-10  md:w-full mx-auto'>
+            <div className='w-full grid gap-10 md:w-full mx-auto'>
                 <h1 className='flex justify-center gap-5 text-lg font-barlow font-regular'> 
                     <span className='text-Dark font-barlow'>01</span>
                     PICK YOUR DESTINATION
@@ -17,8 +17,8 @@ export function Hero({destination}:type){
                 </div>
             </div>
 
-            <div className='w-5/6   mx-auto grid gap-10 md:place-content-center md:w-5/6'>
-                <div className='w-5/6 mx-auto flex justify-between md:mx-0 md:w-1/2 md:text-sm'>
+            <div className='w-5/6 mx-auto grid gap-10 md:place-content-center md:w-5/6'>
+                <div className='w-5/6 mx-auto flex justify-between md:mx-0 md:w-1/3 gap-4 md:text-sm'>
                     <button className={`text-White ${currentdestionation === 0 ?'underline decoration-4 underline-offset-8':''} hover:underline decoration-4 underline-offset-8`} onClick={()=>{
                         setCurrentDestination(0)
                     }}>MOON</button>
@@ -32,7 +32,7 @@ export function Hero({destination}:type){
                         setCurrentDestination(3)
                     }}>TITAN</button>
                 </div>
-                <h1 className='text-5xl md:text-3xl font-bellefair font-regular text-center md:text-left'>{destination[currentdestionation].name.toUpperCase()}</h1>
+                <h1 className='text-5xl md:text-7xl font-bellefair font-regular text-center md:text-left'>{destination[currentdestionation].name.toUpperCase()}</h1>
                 <p className='md:w-2/3 text-center text-White md:text-Blue300 text-lg md:text-sm font-barlow md:text-left'>
                     {destination[currentdestionation].description}
                 </p>
