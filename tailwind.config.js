@@ -24,8 +24,8 @@ export default {
       },
       fontFamily:{
         bellefair:["Bellefair", "serif"],
-        barlow:["Barlow", "sans-serif"]
-
+        barlow:["Barlow", "sans-serif"],
+        barlowcondense:["Barlow Condensed", "sans-serif"]
       }
     },
   },

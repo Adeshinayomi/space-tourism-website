@@ -7,7 +7,7 @@ interface type{
 }
 export function Technology({tech}:type){
     return(
-        <div className="w-full min-h-screen bg-background-tech-mobile bg-no-repeat bg-cover bg-fixed">
+        <div className="w-full min-h-screen bg-background-tech-mobile md:bg-background-tech-desktop bg-no-repeat bg-cover bg-fixed">
             <Header />
             <Hero tech={tech}/>
         </div>

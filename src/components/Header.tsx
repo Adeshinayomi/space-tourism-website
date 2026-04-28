@@ -19,10 +19,10 @@ export function Header(){
                     </div>
                     <hr className='hidden md:flex w-5/6 mx-auto'/>
 
-                    <ul className='w-[40%] absolute border-0 right-0 hidden md:flex justify-between backdrop-blur-2xl border-l border-white/10 shadow-2xl px-4 text-white font-barlow text-sm pl-16'>
+                    <ul className='w-[40%] absolute border-0 right-0 hidden md:flex justify-between backdrop-blur-2xl border-l border-white/10 shadow-2xl px-4 text-white font-barlowcondense text-sm pl-16'>
                          
-                        <Link to={'/'} className='flex gap-2 border-b-2 py-5'>
-                            <span className="text-White font-bold">00</span>
+                        <Link to={'/'} className='flex gap-2 border-b-2 py-5 '>
+                            <span className="text-White font-bold ">00</span>
                             HOME
                         </Link>
                         <Link to={'/destination'} className='flex gap-2 py-5'>
