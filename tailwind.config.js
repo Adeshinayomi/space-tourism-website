@@ -15,6 +15,7 @@ export default {
       backgroundImage:{
         'background-home-mobile': "url('./assets/home/background-home-mobile.jpg')",
         'background-home-desktop': "url('./assets/home/background-home-desktop.jpg')",
+        'background-home-tablet': "url('./assets/home/background-home-tablet.jpg')",
         'background-destination-mobile':"url('./assets/destination/background-destination-mobile.jpg')",
         'background-destination-desktop':"url('./assets/destination/background-destination-desktop.jpg')",
         'background-crew-mobile':"url('./assets/crew/background-crew-mobile.jpg')",

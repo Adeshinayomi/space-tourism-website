@@ -18,9 +18,9 @@ export function Header(){
                     <div>
                         <img src={logo} alt="logo icon" />
                     </div>
-                    <hr className='hidden md:flex w-5/6 mx-auto'/>
+                    <hr className='hidden lg:flex w-5/6 mx-auto '/>
 
-                    <ul className='w-[40%] absolute border-0 right-0 hidden md:flex justify-between backdrop-blur-2xl border-l border-white/10 shadow-2xl px-4 text-white font-barlowcondense text-sm pl-16'>
+                    <ul className='lg:w-[40%] md:w-[80%] md:pl-60 md:flex absolute border-0 right-0 hidden lg:flex justify-between backdrop-blur-2xl border-l border-white/10 shadow-2xl px-4 text-white font-barlowcondense text-sm lg:pl-16'>
                          
                         <Link to={'/'} className={`flex gap-2 ${location.pathname === '/'?'border-b-2':''} py-5`}>
                             <span className="text-White font-bold ">00</span>
