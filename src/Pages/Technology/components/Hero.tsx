@@ -15,8 +15,8 @@ export function Hero({tech}:type){
                     SPACE LAUNCH 101
                 </h1>
                 <div className='grid gap-7 md:flex flex-row-reverse md:py-16'>
-                    <div className='w-full h-48 mt-16 md:hidden'>
-                        <img src={tech[currentTech].images.landscape} alt="space-vehicle-potrait" className='w-full h-full object-center'/>
+                    <div className='mt-16 md:hidden'>
+                        <img src={tech[currentTech].images.landscape} alt="space-vehicle-potrait"/>
                     </div>
                     <div className='hidden md:grid w-2/3'>
                         <img src={tech[currentTech].images.portrait} alt="space-vehicle-potrait" className='w-full'/>
